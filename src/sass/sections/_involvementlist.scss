@@ -29,11 +29,6 @@
     &__text {
       text-align: left;
 
-      &-italic {
-        font-style: italic;
-        margin: inherit;
-      }
-
       @include respond(phone) {
         margin-bottom: 2.5rem !important;
       }
