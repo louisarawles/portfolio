@@ -1,0 +1,32 @@
+.header {
+  display: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: match-parent;
+  border: 0.25rem solid $primary-color;
+
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $dark-blue-text;
+    text-decoration: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    a {
+      color: $primary-color;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        color: darken($primary-color, 50%);
+      }
+    }
+    }
+}

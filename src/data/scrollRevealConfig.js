@@ -7,6 +7,13 @@ export const defaultProps = {
 };
 
 export const targetElements = [
+    {
+    element: ".header",
+    animation: {
+      delay: 1000,
+      origin: "top",
+    },
+  },
   {
     element: ".section-title",
     animation: {
@@ -30,6 +37,20 @@ export const targetElements = [
     },
   },
   {
+    element: ".heroImage-title",
+    animation: {
+      delay: 200,
+      origin: window.innerWidth > 768 ? "left" : "bottom",
+    },
+  },
+  {
+    element: ".heroImage-cta",
+    animation: {
+      delay: 500,
+      origin: window.innerWidth > 768 ? "left" : "bottom",
+    },
+  },
+  {
     element: ".about-wrapper__image",
     animation: {
       delay: 600,
@@ -40,6 +61,20 @@ export const targetElements = [
     element: ".about-wrapper__info",
     animation: {
       delay: 1000,
+      origin: window.innerWidth > 768 ? "left" : "bottom",
+    },
+  },
+  {
+    element: ".education-wrapper__text",
+    animation: {
+      delay: 500,
+      origin: window.innerWidth > 768 ? "left" : "bottom",
+    },
+  },
+  {
+    element: ".involvementlist-wrapper",
+    animation: {
+      delay: 200,
       origin: window.innerWidth > 768 ? "left" : "bottom",
     },
   },
