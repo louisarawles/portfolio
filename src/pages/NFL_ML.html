@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+    <script
+    src="../data/learnMoreConfig.js"
+    ></script>
+  </head>
+  <body>
+    <div id="top"></div>
+    <!-- **** Header **** -->
+    <header class="header">
+        <nav class="nav">
+        <a 
+          rel="noreferrer" 
+          href="../index.html"
+          target="_self"
+          >
+          Home
+        </a>
+        <a 
+          rel="noreferrer" 
+          href="https://louisarawlesportfolio.netlify.app/#projects"
+          target="_self"
+          >
+          Projects
+        </a>
+        <a 
+          rel="noreferrer" 
+          href="involvement.html"
+          target="_self"
+          >
+          Involvement
+        </a>
+        <a 
+          rel="noreferrer" 
+          href="coursework.html"
+          target="_self"
+          >
+          Education
+        </a>
+        <a 
+          rel="noreferrer" 
+          href="#contact"
+          target="_blank"
+          >
+          Contact
+        </a>
+      </nav>
+    </header>
+    <!-- /END Header -->
+
+    <!-- NFL ML Overview (about) Section -->
+    <section id="heroImage" class="jumbotron">
+        <div class="container">
+        <h1 class="heroImage-title">
+          <span class="text-color-main">NFL Next Gen Stats ML Model:
+                <br>
+                Data Analysis with Machine Learning</span>
+        </h1>
+      </div>
+    </section>
+    <!-- END NFL ML Hero Image Section -->
+
+    <!-- NFL ML Section -->
+     <section id="education">
+    <!-- NFL Machine Learning Overview Section -->
+        <div class="container">
+            <main>
+                <h1>Overview</h1>
+                <p>
+                Data interpretation is at the heart of the NFL, from league records to player injury recoveries. 
+                Additionally, it powers sports betting.
+                I'm curious how software and machine learning can take the mass amounts of data recorded during the NFL season and manipulate it to provide insights on both realms.
+                I don't want to make money off of the software, but I want to see how numbers and effective analysis can predict outcomes.
+                <br>
+                <br> 
+                This project focuses on scraping data from NFL statistics, including game and player data, to build a machine learning model for predicting player and team performace.
+                The project involves data collection and parsing through scraping classes, date parsing functions and encapsulation classes to store information into a structured database.
+                The machine learning model is a classifier trained using gini and entropy training mechanisms modeled in a decision tree structure.
+                The project is written in Python, utilizing libraries such as requests for retrieving the JSON object, NumPy and Matplotlib for data analysis, and Pandas and Sklearn for data manipulation and model training.
+                The database is managed using SQLite for efficient data storage and retrieval.
+                <br>
+                <br>
+                Currently, in the project's beginning stages, the program only outputs descriptive analytics, but once the existing raw data is parsed and organized into each of the respective tables, I can train and enhance
+                my ML model.  
+            </p>
+            <h2>
+                <b>
+                    Sections
+                </b>
+            </h2>
+            <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#data vis"
+                >
+                  Data Visualization
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#data classes"
+                >
+                  Data Encapsulation
+                </a>
+                            <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#scrapers"
+                >
+                  Web Scrapers
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#training"
+                >
+                  Model Training
+                </a>
+                                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#database"
+                >
+                  Database Information
+                </a>
+            </main>
+        </div>
+    <!-- END NFL Machine Learning Overview -->
+
+     <!-- NFL Data Vis Section -->
+      <section id="data vis">
+    <div class="container">
+        <main>
+            <h1>NFL Data Visualizations</h1>
+            <br>
+            <a
+                rel="noreferrer"
+                href="https://github.com/louisarawles/NFL-ML/tree/main/NFL%20ML/NFLDataVis"
+                class="cta-btn cta-btn--hero"
+                target="_self"
+                >
+                Data Vis Code
+            </a>
+            <br>
+            <br>
+            <p>
+                My QB Passing Zone Success Rating Plot takes in a player and a game object and mimics the passing zone layout on a field and translates the raw data into meaningful performance information.
+                The plot visualizes the QB's relative performance against the game's average across the field, highlighting strengths and potential execution deficits.
+                The thresholds, below, average, and above, are defined by the NFL and relative to the overall game QB rating average.
+                My plot not only shows the success level, but also the QB's individual ratings, which enhances performance evaluation capabilities by enabling players to compare their raw scores across games.
+            </p>
+            <img src="../assets/NFL_ML/CHI CALEB WILLIAMS 2025 Pass Zones/plot_2026-01-10 20-02-51_12.png" width="300">
+            <img src="../assets/NFL_ML/GB JORDAN LOVE 2025 Pass Zones/plot_2026-01-10 20-10-53_11.png" width="300">
+            <h2>
+                <i>
+                    Caleb Williams and Jordan Love's Performances at End of Game 12/07/2025 
+                </i>
+            </h2>
+            <br>
+            <br>
+            <div id="moreContent" style="display: none;">
+            <p>
+                These specific plots are significant going into the Wild Card game on 01/10/2026. Looking at past scores, Jordan Love hit above average success levels in four different zones and exceeded his opponent's game record
+                in two of them. Additionally, he appears to have kept a tighter focus on specific lanes, as he left three zones unattempted. While that's only one more than his opponent, its 1/4 of the field untouched compared
+                to Williams' 1/6. 
+                <br>
+                <br>
+                As a Bears fan, I'm hoping Love's high success levels fail to translate into the Wild Card game, but my plots hint at a high performance outlook.
+                I hope Caleb Williams made note of his weaker zones on the field and practiced accordingly--go Bears.
+            </p>
+            <br>
+            <img src="../assets/NFL_ML/CHI CALEB WILLIAMS 2025 Pass Zones/CHIH1_vGB.png" width="300">
+            <img src="../assets/NFL_ML/GB JORDAN LOVE 2025 Pass Zones/GBH1_vCHI.png" width="300">
+            <h2>
+                <i>
+                    Caleb Williams and Jordan Love's Performances at Halftime 01/10/2026 
+                </i>
+            </h2>
+            <br>
+            <br>
+            <p>
+                Love again outperforms Williams and leaves a larger portion of the field untouched.
+                Defensively, the Bears are taking a hit where Love keeps nailing snaps past 20 yards in the right third of the field.
+                If they can slow him down and Williams improves his performance in the latter half of the field, they might have a shot at turning the game around.
+            </p>
+            <img src="../assets/NFL_ML/CHI CALEB WILLIAMS 2025 Pass Zones/CHIQ3_vGB.png" width="300">
+            <img src="../assets/NFL_ML/GB JORDAN LOVE 2025 Pass Zones/GBQ3_vCHI.png" width="300">
+            <h2>
+                <i>
+                    Caleb Williams and Jordan Love's Performances at Q3 01/10/2026 
+                </i>
+            </h2>
+            <br>
+            <br>
+            <img src="../assets/NFL_ML/CHI CALEB WILLIAMS 2025 Pass Zones/CHI_vGB.png" width="300">
+            <img src="../assets/NFL_ML/GB JORDAN LOVE 2025 Pass Zones/GB_vCHI.png" width="300">
+            <h2>
+                <i>
+                    Caleb Williams and Jordan Love's Performances at End of Game 01/10/2026 
+                </i>
+            </h2>
+            <br>
+            <br>
+            <p>
+                In the second half of the game, Williams caught up to Love in hitting the above average success level.
+                Simultaneously, Love lowered his score in the crucial 20Plus, rightThird corner--
+                giving the Bears the edge they needed to win the game 31-27. 
+                <br>
+                <br>
+                While these data visualizations designed with Python, NumPy, and Matplotlib are not predictive statistics,
+                they provide telling information on likely QB passing performance and thus, strategy insights.
+            </p>
+            </div>
+            <button onclick="toggleContent()" class="cta-btn cta-btn--hero">Read more</button>
+        </main>
+    </div>
+    </section>
+    <!-- END NFL Data Vis Section -->
+
+     <!-- NFL Data Classes Section -->
+      <section id="data classes">
+      <div class="container">
+        <main>
+            <h1>NFL Data Encapsulation Classes</h1>
+        </main>
+    </div>
+    </section>
+    <!-- END NFL Data Classes Section -->
+
+     <!-- NFL Scrapers Section -->
+      <section id="scrapers">
+        <div class="container">
+            <main>
+                <h1>NFL Data Scrapers</h1>
+            </main>
+        </div>
+        </section>
+    <!-- END NFL Scrapers Section -->
+
+     <!-- NFL Model Training Section -->
+      <section id="training">
+        <div class="container">
+            <main>
+                <h1>NFL Model Training</h1>
+            </main>
+        </div>
+        </section>
+    <!-- END NFL Model Training Section -->
+
+     <!-- NFL Database Section -->
+      <section id="database">
+        <div class="container">
+            <main>
+                <h1>Database Storage</h1>
+            </main>
+        </div>
+        </section>
+    <!-- END NFL Database Section -->
+
+  </section>
+</body>
