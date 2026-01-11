@@ -114,17 +114,17 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#data classes"
-                >
-                  Data Encapsulation
-                </a>
-                            <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
                   href="#scrapers"
                 >
                   Web Scrapers
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#data classes"
+                >
+                  Data Encapsulation
                 </a>
                 <a
                   rel="noreferrer"
@@ -236,31 +236,54 @@
     </section>
     <!-- END NFL Data Vis Section -->
 
-     <!-- NFL Data Classes Section -->
-      <section id="data classes">
-      <div class="container">
-        <main>
-            <h1>NFL Data Encapsulation Classes</h1>
-        </main>
-    </div>
-    </section>
-    <!-- END NFL Data Classes Section -->
-
      <!-- NFL Scrapers Section -->
       <section id="scrapers">
         <div class="container">
             <main>
                 <h1>NFL Data Scrapers</h1>
+                <p>
+                    I designed data scraper files that retrieve information from the NFL Next Gen Stats page, 
+                    encapsulate it into a data class, and return the organized list for further action (ie: loading into databases,
+                    printing, etc.) My web scraper factory class contains methods that all scrapers share, acting as a factory class for the stat-specific scrapers. 
+                    I also have a directory within NFLScrapers, GameCenter, that holds both my game center scraper and two other files with helper functions.
+                    Due to the sheer volume of data held within the game center page, I opted to delegate a file to encapsulation methods for the different statistics 
+                    and a file for refining the outputted list of games. I suspect the latter file will become less important once I determine how to organize my game center table,
+                    but it's useful scaffolding in the meantime. 
+                    <br>
+                    <br>
+                    I take data from the NFL Next Gen Stats pages, finding the underlying APIs that hold the data-filled JSON objects. All urls are in the codebase. 
+                </p> 
             </main>
         </div>
         </section>
     <!-- END NFL Scrapers Section -->
+
+    <!-- NFL Data Classes Section -->
+      <section id="data classes">
+      <div class="container">
+        <main>
+            <h1>NFL Data Encapsulation Classes</h1>
+            <p>
+                I designed data classes to encapsulate the raw data retrieved by my web scrapers.
+                In each instance, the order is specified (ie: order=true) to define their comparator functions,
+                which is important in database retrieval. The encapsulated data also streamlines communication
+                between functions and classes, making it easier to separate methods into separate files and directories.
+            </p>
+        </main>
+    </div>
+    </section>
+    <!-- END NFL Data Classes Section -->
 
      <!-- NFL Model Training Section -->
       <section id="training">
         <div class="container">
             <main>
                 <h1>NFL Model Training</h1>
+                <p>
+                    Training my ML classifiers is a later stage in my project plan, as I want to first have all of my data organized and inputted into databases before using it for training.
+                    That being said, I designed a basic decision tree and trained the classifier using Gini and Entropy to get a grasp of where my project is going. I used an old Excel 'Happiness' data file from one of my classes to 
+                    observe how the classifier works and what sorts of inputs are necessary to achieve a meaningful output. Once I reach this point in my project, I will also explore more sophisticated ML model designs and techniques to improve the classifier.  
+                </p>
             </main>
         </div>
         </section>
@@ -271,10 +294,14 @@
         <div class="container">
             <main>
                 <h1>Database Storage</h1>
+                <p>
+                    SQLite supports my databases with the assistance of my Python-SQLite3 database driver.
+                    Earlier on in my project, I executed a lot more database invocations but realized that consumed significant time when I wanted to refine columns, tables, etc.
+                    So now I aim to avoid calling the database driver until I'm happy with all of the table structures.
+                </p>
             </main>
         </div>
         </section>
     <!-- END NFL Database Section -->
-
   </section>
 </body>
