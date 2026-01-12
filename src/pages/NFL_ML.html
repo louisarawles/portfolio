@@ -17,9 +17,11 @@
     <script
     src="../data/learnMoreConfig.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
   </head>
   <body>
-    <div id="top"></div>
+    <div id="top">
     <!-- **** Header **** -->
     <header class="header">
         <nav class="nav">
@@ -60,11 +62,12 @@
         </a>
       </nav>
     </header>
+    </div>
     <!-- /END Header -->
 
-    <!-- NFL ML Overview (about) Section -->
+    <!-- NFL ML Hero Image Section -->
     <section id="heroImage" class="jumbotron">
-        <div class="container">
+        <div class="container protectedTop">
         <h1 class="heroImage-title">
           <span class="text-color-main">NFL Next Gen Stats ML Model:
                 <br>
@@ -74,9 +77,88 @@
     </section>
     <!-- END NFL ML Hero Image Section -->
 
+    <!-- Module Nav Bar Section -->
+    <!-- <div id="modules" class="bg-white"> -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
+            <div class="container-fluid">
+            <a class="navbar-brand cta-btn text-color-main" href="../index.html">
+                <img src="../assets/favicon.png" width="40px">
+                Rawles Portfolio | NFL ML
+            </a>
+            <button class="navbar-toggler" style="border-color:#5e0c0f;" type="button" data-bs-toggle="collapse"
+             data-bs-target="#navbarNav" aria-controls="navbarNav" 
+             aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a
+                        class="nav-link active cta-btn text-color-main"
+                        href="#overview"
+                        >
+                        Overview
+                        </a> 
+                    </li>
+                 <li class="nav-item">         
+                <a
+                  class="nav-link cta-btn text-color-main"
+                  href="#data-vis"
+                >
+                  Data Visualization
+                </a>
+                </li>
+                <li class="nav-item">
+                <a
+                  class="nav-link cta-btn text-color-main"
+                  href="#scrapers"
+                >
+                  Web Scrapers
+                </a>
+                </li>
+                <li class="nav-item">
+                <a
+                  class="nav-link cta-btn text-color-main"
+                  href="#data-classes"
+                >
+                  Data Encapsulation
+                </a>
+                </li>
+                <li class="nav-item">
+                <a
+                  class="nav-link cta-btn text-color-main"
+                  href="#training"
+                >
+                  Model Training
+                </a>
+                </li>
+                <li class="nav-item">
+                <a
+                  class="nav-link cta-btn text-color-main"
+                  href="#database"
+                >
+                  Database Information
+                </a>
+                </li>
+                <li class="nav-item">
+                <a
+                  class="nav-link cta-btn text-color-main"
+                  href="#demos"
+                >
+                  Demos
+                </a>
+                </li>
+                </ul>
+                </div>    
+            </div>
+            </nav>
+        </div>  
+    
     <!-- NFL ML Section -->
      <section id="education">
+
     <!-- NFL Machine Learning Overview Section -->
+    <section id="overview">
         <div class="container">
             <main>
                 <h1>Overview</h1>
@@ -97,57 +179,14 @@
                 Currently, in the project's beginning stages, the program only outputs descriptive analytics, but once the existing raw data is parsed and organized into each of the respective tables, I can train and enhance
                 my ML model.  
             </p>
-            <h2>
-                <b>
-                    Sections
-                </b>
-            </h2>
-            <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#data vis"
-                >
-                  Data Visualization
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#scrapers"
-                >
-                  Web Scrapers
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#data classes"
-                >
-                  Data Encapsulation
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#training"
-                >
-                  Model Training
-                </a>
-                                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#database"
-                >
-                  Database Information
-                </a>
+            
             </main>
         </div>
+    </section>
     <!-- END NFL Machine Learning Overview -->
 
      <!-- NFL Data Vis Section -->
-      <section id="data vis">
+      <section id="data-vis">
     <div class="container">
         <main>
             <h1>NFL Data Visualizations</h1>
@@ -240,7 +279,18 @@
       <section id="scrapers">
         <div class="container">
             <main>
-                <h1>NFL Data Scrapers</h1>
+            <h1>NFL Data Scrapers</h1>
+            <br>
+            <a
+                rel="noreferrer"
+                href="https://github.com/louisarawles/NFL-ML/tree/main/NFL%20ML/NFLScrapers"
+                class="cta-btn cta-btn--hero"
+                target="_self"
+                >
+                Scraper Code
+            </a>
+            <br>
+            <br>
                 <p>
                     I designed data scraper files that retrieve information from the NFL Next Gen Stats page, 
                     encapsulate it into a data class, and return the organized list for further action (ie: loading into databases,
@@ -259,10 +309,21 @@
     <!-- END NFL Scrapers Section -->
 
     <!-- NFL Data Classes Section -->
-      <section id="data classes">
+      <section id="data-classes">
       <div class="container">
         <main>
             <h1>NFL Data Encapsulation Classes</h1>
+            <br>
+            <a
+                rel="noreferrer"
+                href="https://github.com/louisarawles/NFL-ML/tree/main/NFL%20ML/NFLDataClasses"
+                class="cta-btn cta-btn--hero"
+                target="_self"
+                >
+                Data Class Code
+            </a>
+            <br>
+            <br>
             <p>
                 I designed data classes to encapsulate the raw data retrieved by my web scrapers.
                 In each instance, the order is specified (ie: order=true) to define their comparator functions,
@@ -279,6 +340,17 @@
         <div class="container">
             <main>
                 <h1>NFL Model Training</h1>
+                <br>
+                <a
+                rel="noreferrer"
+                href="https://github.com/louisarawles/NFL-ML/blob/main/NFL%20ML/decisionTree.py"
+                class="cta-btn cta-btn--hero"
+                target="_self"
+                >
+                ML Code
+                </a>
+            <br>
+            <br>
                 <p>
                     Training my ML classifiers is a later stage in my project plan, as I want to first have all of my data organized and inputted into databases before using it for training.
                     That being said, I designed a basic decision tree and trained the classifier using Gini and Entropy to get a grasp of where my project is going. I used an old Excel 'Happiness' data file from one of my classes to 
@@ -294,6 +366,17 @@
         <div class="container">
             <main>
                 <h1>Database Storage</h1>
+                <br>
+                <a
+                rel="noreferrer"
+                href="https://github.com/louisarawles/NFL-ML/blob/main/NFL%20ML/databaseDriver.py"
+                class="cta-btn cta-btn--hero"
+                target="_self"
+                >
+                Database Driver Code
+                </a>
+            <br>
+            <br>                
                 <p>
                     SQLite supports my databases with the assistance of my Python-SQLite3 database driver.
                     Earlier on in my project, I executed a lot more database invocations but realized that consumed significant time when I wanted to refine columns, tables, etc.
@@ -303,5 +386,106 @@
         </div>
         </section>
     <!-- END NFL Database Section -->
-  </section>
+
+     <!-- NFL Demos Section -->
+      <section id="demos">
+        <div class="container">
+            <h2 class="section-title dark-blue-text">Live Demos</h2>
+            <main>
+
+            <!-- Each .row is a demo -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="courselist-wrapper__text">
+                    <div class="courselist-wrapper__text-title">
+                        <h3>
+                            <b>
+                                CHI v. GB: Scrape and Plot
+                            </b>
+                        </h3>
+                        <p>
+                            <img src="../assets/NFL_ML/Bears_Packers.jpg" width="300">                            
+                        </p>
+                        <a
+                        rel="noreferrer"
+                        href="https://github.com/louisarawles/NFL-ML/blob/main/NFL%20ML/Examples/Scraper%20Ex/EX_game_center_CHIvGB.py"
+                        class="cta-btn cta-btn--hero"
+                        target="_self"
+                        >
+                        Bears vs. Packers Demo
+                        </a>
+                        <br>
+                        <br>
+                        <p class="courselist-wrapper__text">
+                            This code demonstrates data retrieval and parsing via my game center scraper and game encapsulation classes, as well as 
+                            game stat formatted output and QB passing zone plots.
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- END demo -->
+
+            </main>
+        </div>
+    </section>
+    <!-- END NFL Demos Section -->
+
+    </section>
+    <!-- END NFL ML Section -->
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Get in touch.</h2>
+        <div class="contact-wrapper load-hidden">
+          <p class="contact-wrapper__text">Contact me with inquiries or to request further information.</p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:hnj7pk@virginia.edu"
+            >Email Me</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a rel="noreferrer" href="https://linkedin.com/in/louisa-rawles-18aa6932a" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="https://github.com/louisarawles" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+
+        <hr />
+
+        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+        <p class="footer__text">
+          © 2021 - Template developed by
+          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
+            >Jacobo Martínez</a
+          >
+        </p>
+        <p class="footer__text">
+          © 2025 - Template implemented and extended by
+          <a rel="noreferrer" href="https://github.com/louisarawles" target="_blank"
+            >Louisa Rawles</a
+          >
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+     <script defer type="module" src="../index.js"></script>
 </body>
+</html>
