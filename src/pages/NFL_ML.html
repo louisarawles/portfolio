@@ -163,27 +163,41 @@
             <main>
                 <h1>Overview</h1>
                 <p>
-                Data interpretation is at the heart of the NFL, from league records to player injury recoveries. 
-                Additionally, it powers sports betting.
-                I'm curious how software and machine learning can take the mass amounts of data recorded during the NFL season and manipulate it to provide insights on both realms.
-                I don't want to make money off of the software, but I want to see how numbers and effective analysis can predict outcomes.
-                <br>
-                <br> 
-                This project focuses on scraping data from NFL statistics, including game and player data, to build a machine learning model for predicting player and team performance.
-                The project involves data collection and parsing through scraping classes, date parsing functions and encapsulation classes to store information into a structured database.
-                The machine learning model is a classifier trained using gini and entropy training mechanisms modeled in a decision tree structure.
-                The project is written in Python, utilizing libraries such as requests for retrieving the JSON object, NumPy and Matplotlib for data analysis, and Pandas and Sklearn for data manipulation and model training.
-                The database is managed using SQLite for efficient data storage and retrieval.
-                <br>
-                <br>
-                Currently, in the project's beginning stages, the program only outputs descriptive analytics, but once the existing raw data is parsed and organized into each of the respective tables, I can train and enhance
-                my ML model.  
+                  
+                  This project is an end-to-end data and machine learning system built to ingest, structure, and analyze large-scale NFL Next Gen Stats data in order to evaluate and predict player and team performance. The goal of the project is to explore how raw, high-volume sports data can be transformed into structured datasets, analyzed statistically, and used to support predictive modeling.
+                  <br>
+                  <br>
+                  I designed the system to prioritize reliable data ingestion, clean schema design, and extensibility, allowing analytics and machine learning models to be developed incrementally on top of a stable data foundation.
             </p>
             
             </main>
         </div>
     </section>
     <!-- END NFL Machine Learning Overview -->
+
+    <!-- NFL System Architecture Section -->
+     <section id="architecture">
+      <div class="container">
+        <main>
+          <h1>System Architecture</h1>
+          <p>
+            <b>Data Sources:</b> NFL Next Gen Stats APIs (JSON)
+            <br>
+            <b>Ingestion:</b> Python scrapers with shared factory logic
+            <br>
+            <b>Processing:</b> Parsing, normalization, encapsulation methods and classes
+            <br>
+            <b>Storage:</b> SQLite relational database
+            <br>
+            <b>Analytics Frameworks:</b> NumPy, Pandas, Matplotlib
+            <br>
+            <b>Modeling:</b> Decision tree classifiers (Trained with Gini / Entropy)
+            <br>
+            <b>Visualization:</b> QB passing zones heatmaps
+          </p>
+        </main>
+      </div>
+     </section>
 
      <!-- NFL Data Vis Section -->
       <section id="data-vis">
