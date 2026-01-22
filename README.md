@@ -4,9 +4,12 @@
   <br>
 </h2>
 
+## Purpose
+I designed this portfolio to showcase my academic career, co-curriculars and experiences, as well as my personal software projects. The website is frequently updated to include new projects I have undertaken and experiences I have partaken in.
+
 ---
 
-### Prerequisites 📋
+## Prerequisites
 
 [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [NPM](http://npmjs.com)) installed on your computer.
 
@@ -81,13 +84,13 @@ Once your server has started, go to the local host url
 
 ---
 
-## Deployment 📦
+## Deployment
 
 Deployed with Netlify at [https://louisarawlesportfolio.netlify.app/](https://louisarawlesportfolio.netlify.app/).
 
 I highly recommend to use [Netlify](https://netlify.com) because it is super easy.
 
-## Technologies used 🛠️
+## Technologies used
 
 - [Parcel](https://parceljs.org/) - Bundler
 - [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) - Frontend component library
@@ -100,6 +103,6 @@ I highly recommend to use [Netlify](https://netlify.com) because it is super eas
 - **Jacobo Martinez** - [https://github.com/cobiwave](https://github.com/cobiwave)
 - **Louisa Rawles** - [https://github.com/louisarawles](https://github.com/louisarawles)
 
-## License 📄
+## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
