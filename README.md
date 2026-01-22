@@ -1,13 +1,10 @@
-# Louisa Rawles -- Portfolio ⚡️
+# Louisa Rawles -- Portfolio
 <h2 align="center">
   <img src="https://github.com/cobiwave/gatsby-simplefolio/blob/master/examples/example.gif" alt="Simplefolio" width="600px" />
   <br>
 </h2>
 
 ---
-## Getting Started 🚀
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites 📋
 
@@ -27,7 +24,7 @@ yarn@v1.22.10 or higher
 
 ---
 
-## How To Use 🔧
+## How To Use
 
 From your command line, first clone Simplefolio:
 
