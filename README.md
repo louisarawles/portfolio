@@ -1,10 +1,8 @@
 # Louisa Rawles -- Portfolio
-<h2 align="center">
-  <img src="https://github.com/cobiwave/gatsby-simplefolio/blob/master/examples/example.gif" alt="Simplefolio" width="600px" />
-  <br>
-</h2>
 
+---
 ## Purpose
+
 I designed this portfolio to showcase my academic career, co-curriculars and experiences, as well as my personal software projects. The website is frequently updated to include new projects I have undertaken and experiences I have partaken in.
 
 ---
