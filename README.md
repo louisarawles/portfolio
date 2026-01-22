@@ -1,6 +1,5 @@
 # Louisa Rawles -- Portfolio
 
----
 ## Purpose
 
 I designed this portfolio to showcase my academic career, co-curriculars and experiences, as well as my personal software projects. The website is frequently updated to include new projects I have undertaken and experiences I have partaken in.
