@@ -1,0 +1,425 @@
+<!DOCTYPE html><html lang=en class=sr><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width, initial-scale=1"><link rel="icon shortcut" type=image/png href=/favicon.03e385ae.png><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css><link rel=stylesheet href=/portfolio.9a5209db.css><script defer src=https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js></script><script src=/NFL_ML.6951a54e.js></script><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js></script><body>
+  <div id=top>
+    
+    <header class=header>
+      <nav class=nav>
+        <a rel=noreferrer href=/index.html>
+          Home
+        </a>
+        <a rel=noreferrer href=https://louisarawlesportfolio.netlify.app/#projects>
+          Projects
+        </a>
+        <a rel=noreferrer href=/pages/involvement.html>
+          Involvement
+        </a>
+        <a rel=noreferrer href=/pages/coursework.html>
+          Education
+        </a>
+        <a rel=noreferrer href=#contact target=_blank>
+          Contact
+        </a>
+      </nav>
+    </header>
+  </div>
+  
+
+  
+  <section id=heroImage class=jumbotron>
+    <div class="container protectedTop">
+      <h1 class=heroImage-title>
+        <span class=text-color-main>NFL Next Gen Stats ML Model:
+          <br>
+          Data Analysis with Machine Learning</span>
+      </h1>
+    </div>
+  </section>
+  
+
+  
+  <nav class="navbar navbar-custom navbar-expand-lg navbar-light sticky-top" style=font-size:1.6rem>
+    <div class=container-fluid>
+      <a class="cta-btn navbar-brand text-color-main" href=/index.html style=font-size:2rem>
+        <img src=/favicon.03e385ae.png width=40px>
+        Rawles Portfolio | NFL ML
+      </a>
+      <button class=navbar-toggler style=border-color:#5e0c0f type=button data-bs-toggle=collapse data-bs-target=#navbarNav aria-controls=navbarNav aria-expanded=false aria-label="Toggle navigation">
+        <span class=navbar-toggler-icon></span>
+      </button>
+      <div class="collapse navbar-collapse" id=navbarNav>
+        <ul class=navbar-nav>
+          <li class=nav-item>
+            <a class="active cta-btn nav-link text-color-main" href=#overview>
+              Overview
+            </a>
+          </li>
+          <li class=nav-item>
+            <a class="cta-btn nav-link text-color-main" href=#model>
+              Predictive ML Model
+            </a>
+          </li>
+          <li class=nav-item>
+            <a class="cta-btn nav-link text-color-main" href=#data-vis>
+              Data Visualization
+            </a>
+          </li>
+          <li class=nav-item>
+            <a class="cta-btn nav-link text-color-main" href=#scrapers>
+              Web Scrapers
+            </a>
+          </li>
+          <li class=nav-item>
+            <a class="cta-btn nav-link text-color-main" href=#data-classes>
+              Data Encapsulation
+            </a>
+          </li>
+          <li class=nav-item>
+            <a class="cta-btn nav-link text-color-main" href=#database>
+              Database Information
+            </a>
+          </li>
+          <li class=nav-item>
+            <a class="cta-btn nav-link text-color-main" href=#demos>
+              Demos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+
+  
+  <section id=education>
+
+    
+    <section id=overview>
+      <div class=container>
+        <main>
+          <h1>Overview</h1>
+          <p>
+            This project is an end-to-end data and machine learning system built to ingest, structure, and analyze
+            large-scale NFL Next Gen Stats data in order to evaluate and predict player and team performance. The goal
+            of the project is to explore how raw, high-volume sports data can be transformed into structured datasets,
+            analyzed statistically, and used to support predictive modeling.
+            <br>
+            <br>
+            I designed the system to prioritize reliable data ingestion, clean schema design, and extensibility,
+            allowing analytics and machine learning models to be developed incrementally on top of a stable data
+            foundation.
+          </p>
+
+        </main>
+      </div>
+    </section>
+    
+
+    
+    <section id=architecture>
+      <div class=container>
+        <main>
+          <h1>System Architecture</h1>
+          <p>
+            <b>Data Sources:</b> NFL Next Gen Stats APIs (JSON)
+            <br>
+            <b>Ingestion:</b> Python scrapers with shared factory logic
+            <br>
+            <b>Processing:</b> Parsing, normalization, encapsulation methods and classes
+            <br>
+
+            <a href=https://github.com/louisarawles/NFL-ML/tree/main/NFL%20ML/NFLDataClasses target=_blank class="cta-btn text-color-main">
+              Data Classes
+            </a>
+            <a href=https://github.com/louisarawles/NFL-ML/tree/main/NFL%20ML/NFLScrapers/GameCenter/encapsulate_game_stats.py target=_blank class="cta-btn text-color-main">
+              Game Stat Encapsulator
+            </a>
+            <br>
+            <b>Storage:</b> SQLite relational database
+            <br>
+            <a href=https://github.com/louisarawles/NFL-ML/tree/main/NFL%20ML/databaseDriver.py target=_blank class="cta-btn text-color-main">
+              Database Driver
+            </a>
+            <br>
+            <b>Analytics Frameworks:</b> NumPy, Pandas, Matplotlib
+            <br>
+            <b>Modeling:</b> Decision tree classifiers (Trained with Gini / Entropy)
+            <br>
+            <b>Visualization:</b> QB passing zones heatmaps
+          </p>
+        </main>
+      </div>
+    </section>
+    
+
+    
+    <section id=model>
+      <div class=container>
+        <main>
+          <h1>Game-Outcome Predictive ML Model</h1>
+          <br>
+          <a rel=noreferrer href=https://github.com/louisarawles/NFL-ML/blob/main/NFL%20ML/decisionTree.py class="cta-btn cta-btn--hero">
+            ML Code
+          </a>
+          <br>
+          <br>
+          <img src=/gameStats_plot.b0bda299.png width=500>
+          <br>
+          <p>
+            The tree-based classifier retrieves the data formation from the GameStats table,
+            splits the 500+ inputs into features and target training and test sets,
+            then trains the classifier object via Gini and Entropy frameworks.
+            <br>
+            <br>
+          </p>
+        </main>
+      </div>
+    </section>
+    
+
+    
+    <section id=data-vis>
+      <div class=container>
+        <main>
+          <h1>NFL Data Visualizations</h1>
+          <br>
+          <a rel=noreferrer href=https://github.com/louisarawles/NFL-ML/tree/main/NFL%20ML/NFLDataVis class="cta-btn cta-btn--hero">
+            Data Vis Code
+          </a>
+          <br>
+          <br>
+          <p>
+            My QB Passing Zone Success Rating Plot takes in a player and a game object and mimics the passing zone
+            layout on a field and translates the raw data into meaningful performance information.
+            The plot visualizes the QB's relative performance against the game's average across the field, highlighting
+            strengths and potential execution deficits.
+            The thresholds, below, average, and above, are defined by the NFL and relative to the overall game QB rating
+            average.
+            My plot not only shows the success level, but also the QB's individual ratings, which enhances performance
+            evaluation capabilities by enabling players to compare their raw scores across games.
+          </p>
+          <img src=/plot_2026-01-10%2020-02-51_12.ea624976.png>
+          <img src=/plot_2026-01-10%2020-10-53_11.bc87d3b4.png>
+          <h2>
+            <i>
+              Caleb Williams and Jordan Love's Performances at End of Game 12/07/2025
+            </i>
+          </h2>
+          <br>
+          <br>
+          <div id=moreContent style=display:none>
+            <p>
+              These specific plots are significant going into the Wild Card game on 01/10/2026. Looking at past scores,
+              Jordan Love hit above average success levels in four different zones and exceeded his opponent's game
+              record
+              in two of them. Additionally, he appears to have kept a tighter focus on specific lanes, as he left three
+              zones unattempted. While that's only one more than his opponent, its 1/4 of the field untouched compared
+              to Williams' 1/6.
+              <br>
+              <br>
+              As a Bears fan, I'm hoping Love's high success levels fail to translate into the Wild Card game, but my
+              plots hint at a high performance outlook.
+              I hope Caleb Williams made note of his weaker zones on the field and practiced accordingly--go Bears.
+            </p>
+            <br>
+            <img src=/CHIH1_vGB.51a2c2ee.png>
+            <img src=/GBH1_vCHI.4a622f89.png>
+            <h2>
+              <i>
+                Caleb Williams and Jordan Love's Performances at Halftime 01/10/2026
+              </i>
+            </h2>
+            <br>
+            <br>
+            <p>
+              Love again outperforms Williams and leaves a larger portion of the field untouched.
+              Defensively, the Bears are taking a hit where Love keeps nailing snaps past 20 yards in the right third of
+              the field.
+              If they can slow him down and Williams improves his performance in the latter half of the field, they
+              might have a shot at turning the game around.
+            </p>
+            <img src=/CHIQ3_vGB.32972615.png>
+            <img src=/GBQ3_vCHI.a159caac.png>
+            <h2>
+              <i>
+                Caleb Williams and Jordan Love's Performances at Q3 01/10/2026
+              </i>
+            </h2>
+            <br>
+            <br>
+            <img src=/CHI_vGB.f1d12379.png>
+            <img src=/GB_vCHI.384ff2f5.png>
+            <h2>
+              <i>
+                Caleb Williams and Jordan Love's Performances at End of Game 01/10/2026
+              </i>
+            </h2>
+            <br>
+            <br>
+            <p>
+              In the second half of the game, Williams caught up to Love in hitting the above average success level.
+              Simultaneously, Love lowered his score in the crucial 20Plus, rightThird corner--
+              giving the Bears the edge they needed to win the game 31-27.
+              <br>
+              <br>
+              While these data visualizations designed with Python, NumPy, and Matplotlib are not predictive statistics,
+              they provide telling information on likely QB passing performance and thus, strategy insights.
+            </p>
+          </div>
+          <button onclick=toggleContent() class="cta-btn cta-btn--hero">Read more</button>
+        </main>
+      </div>
+    </section>
+    
+
+    
+    <section id=scrapers>
+      <div class=container>
+        <main>
+          <h1>NFL Data Scrapers</h1>
+          <br>
+          <a rel=noreferrer href=https://github.com/louisarawles/NFL-ML/tree/main/NFL%20ML/NFLScrapers class="cta-btn cta-btn--hero">
+            Scraper Code
+          </a>
+          <br>
+          <br>
+          <p>
+            I designed data scraper files that retrieve information from the NFL Next Gen Stats page,
+            encapsulate it into a data class, and return the organized list for further action (ie: loading into
+            databases,
+            printing, etc.) My web scraper factory class contains methods that all scrapers share, acting as a factory
+            class for the stat-specific scrapers.
+            I also have a directory within NFLScrapers, GameCenter, that holds both my game center scraper and two other
+            files with helper functions.
+            Due to the sheer volume of data held within the game center page, I opted to delegate a file to
+            encapsulation methods for the different statistics
+            and a file for refining the outputted list of games. I suspect the latter file will become less important
+            once I determine how to organize my game center table,
+            but it's useful scaffolding in the meantime.
+            <br>
+            <br>
+            I take data from the NFL Next Gen Stats pages, finding the underlying APIs that hold the data-filled JSON
+            objects. All urls are in the codebase.
+          </p>
+        </main>
+      </div>
+    </section>
+    
+
+    
+    <section id=data-classes>
+      <div class=container>
+        <main>
+          <h1>NFL Data Encapsulation Classes</h1>
+          <br>
+          <a rel=noreferrer href=https://github.com/louisarawles/NFL-ML/tree/main/NFL%20ML/NFLDataClasses class="cta-btn cta-btn--hero">
+            Data Class Code
+          </a>
+          <br>
+          <br>
+          <p>
+            I designed data classes to encapsulate the raw data retrieved by my web scrapers.
+            In each instance, the order is specified (ie: order=true) to define their comparator functions,
+            which is important in database retrieval. The encapsulated data also streamlines communication
+            between functions and classes, making it easier to separate methods into separate files and directories.
+          </p>
+        </main>
+      </div>
+    </section>
+    
+
+    
+    <section id=database>
+      <div class=container>
+        <main>
+          <h1>Database Storage</h1>
+          <br>
+          <a rel=noreferrer href=https://github.com/louisarawles/NFL-ML/blob/main/NFL%20ML/databaseDriver.py class="cta-btn cta-btn--hero">
+            Database Driver Code
+          </a>
+          <br>
+          <br>
+          <p>
+            SQLite supports my databases with the assistance of my Python-SQLite3 database driver.
+
+          </p>
+        </main>
+      </div>
+    </section>
+    
+
+    
+    <section id=demos>
+      <div class=container>
+        <h2 class="dark-blue-text section-title">Live Demos</h2>
+        
+        <div class=row>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class=courselist-wrapper__text>
+              <div class=courselist-wrapper__text-title>
+                <h3>
+                  <b>
+                    CHI v. GB: Scrape and Plot
+                  </b>
+                </h3>
+                <p>
+                  <img src=/Bears_Packers.1c99d05f.jpg>
+                </p>
+                <a rel=noreferrer href=https://github.com/louisarawles/NFL-ML/blob/main/NFL%20ML/Examples/Scraper%20Ex/EX_game_center_CHIvGB.py class="cta-btn cta-btn--hero">
+                  Bears vs. Packers Demo
+                </a>
+                <br>
+                <br>
+                <p class=courselist-wrapper__text>
+                  This code demonstrates data retrieval and parsing via my game center scraper and game encapsulation
+                  classes, as well as
+                  game stat formatted output and QB passing zone plots.
+                </p>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+
+  </section>
+  
+
+  
+  <section id=contact>
+    <div class=container>
+      <h2 class=section-title>Get in touch.</h2>
+      <div class="contact-wrapper load-hidden">
+        <p class=contact-wrapper__text>Contact me with inquiries or to request further information.</p>
+        <a rel=noreferrer target=_blank class="cta-btn cta-btn--resume" href=mailto:hnj7pk@virginia.edu>Email
+          Me</a>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <footer class="footer navbar-static-bottom">
+    <div class=container>
+      <a rel=noreferrer href=#top class=back-to-top>
+        <i class="fa fa-2x fa-angle-up" aria-hidden=true></i>
+      </a>
+      <div class=social-links>
+        <a rel=noreferrer href=https://linkedin.com/in/louisa-rawles-18aa6932a target=_blank>
+          <i class="fa fa-inverse fa-linkedin"></i>
+        </a>
+        <a rel=noreferrer href=https://github.com/louisarawles target=_blank>
+          <i class="fa fa-github fa-inverse"></i>
+        </a>
+      </div>
+
+      <hr>
+    </div>
+  </footer>
+  
+  <script defer type=module src=/portfolio.e91111c6.js></script>
+
+
