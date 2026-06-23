@@ -2,7 +2,7 @@
 
 ## Purpose
 
-I designed this portfolio to showcase my academic career, co-curriculars and experiences, as well as my personal software projects. The website is frequently updated to include new projects I have undertaken and experiences I have partaken in.
+I designed this portfolio to showcase my academic career, co-curriculars and experiences, as well as my personal software projects. The website is frequently updated to include new projects I have completed and experiences I have partaken in. I used Simplefolio by Jacobo Martinez as a base template.
 
 ---
 
@@ -26,20 +26,7 @@ yarn@v1.22.10 or higher
 
 ## How To Use
 
-From your command line, first clone Simplefolio:
-
-```bash
-# Clone the repository
-$ git clone https://github.com/cobiwave/simplefolio
-
-# Move into the repository
-$ cd simplefolio
-
-# Remove the current origin repository
-$ git remote remove origin
-```
-
-After that, you can install the dependencies either using NPM or Yarn.
+You can install the dependencies either using NPM or Yarn.
 
 Using NPM: Simply run the below commands.
 
@@ -53,16 +40,6 @@ $ npm install
 
 # Start the development server
 $ npm start
-```
-
-Using Yarn: Be aware of that you'll need to delete the `package-lock.json` file before executing the below commands.
-
-```bash
-# Install dependencies
-$ yarn
-
-# Start the development server
-$ yarn start
 ```
 
 **NOTE**:
@@ -84,8 +61,6 @@ Once your server has started, go to the local host url
 ## Deployment
 
 Deployed with Netlify at [https://louisarawlesportfolio.netlify.app/](https://louisarawlesportfolio.netlify.app/).
-
-I highly recommend to use [Netlify](https://netlify.com) because it is super easy.
 
 ## Technologies used
 
